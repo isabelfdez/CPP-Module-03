@@ -6,7 +6,7 @@
 /*   By: user42 <user42@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/17 13:34:43 by user42            #+#    #+#             */
-/*   Updated: 2021/08/29 19:14:07 by user42           ###   ########.fr       */
+/*   Updated: 2021/08/29 19:14:27 by user42           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,23 +14,23 @@
 
 ClapTrap::ClapTrap(void) : _name("Noname"), _hitpoints(10), _energypoints(10), _attackdamage(0)
 {
-	std::cout << "Default constructor has been called" << std::endl;
+	std::cout << "ClapTrap's default constructor has been called" << std::endl;
 }
 
 ClapTrap::ClapTrap(std::string &name) : _name(name), _hitpoints(10), _energypoints(10), _attackdamage(0)
 {
-	std::cout << "Assignation constructor has been called" << std::endl;
+	std::cout << "ClapTrap's assignation constructor has been called" << std::endl;
 }
 
 ClapTrap::ClapTrap(ClapTrap &instance)
 {
-	std::cout << "Copy constructor has been called" << std::endl;
+	std::cout << "ClapTrap's copy constructor has been called" << std::endl;
 	*this = instance;
 }
 
 ClapTrap::~ClapTrap(void)
 {
-	std::cout << "Destructor has been called" << std::endl;
+	std::cout << "ClapTrap's destructor has been called" << std::endl;
 }
 
 ClapTrap&		ClapTrap::operator=(ClapTrap &instance)
