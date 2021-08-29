@@ -1,38 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ScravTrap.hpp                                      :+:      :+:    :+:   */
+/*   FragTrap.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: user42 <user42@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/08/29 18:25:06 by user42            #+#    #+#             */
-/*   Updated: 2021/08/29 20:58:38 by user42           ###   ########.fr       */
+/*   Created: 2021/08/29 21:04:29 by user42            #+#    #+#             */
+/*   Updated: 2021/08/29 21:11:54 by user42           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef SCRAVTRAP_HPP
-# define SCRAVTRAP_HPP
+#ifndef FRAGTRAP_HPP
+# define FRAGTRAP_HPP
 
 # include "ClapTrap.hpp"
 
-class ScravTrap : public ClapTrap
+class FragTrap : public ClapTrap
 {
 	public:
-		ScravTrap(void);
-		ScravTrap(std::string &name);
-		ScravTrap(ScravTrap &instance);
-		~ScravTrap(void);
+		FragTrap(void);
+		FragTrap(std::string &name);
+		FragTrap(FragTrap &instance);
+		~FragTrap(void);
 
-		ScravTrap&		operator=(ScravTrap &instance);
+		FragTrap&		operator=(FragTrap &instance);
 
 		void			attack(std::string const &target);
 		void			takeDamage(unsigned int amount);
 		void			beRepaired(unsigned int amount);
 
-		void			guardGate(void);
+		void			highFivesGuys(void);
 };
-
-
-
 
 #endif
