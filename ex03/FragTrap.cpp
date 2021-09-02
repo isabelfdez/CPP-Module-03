@@ -6,7 +6,7 @@
 /*   By: isfernan <isfernan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/29 21:04:25 by user42            #+#    #+#             */
-/*   Updated: 2021/09/01 15:37:22 by isfernan         ###   ########.fr       */
+/*   Updated: 2021/09/02 19:23:04 by isfernan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,11 @@
 
 FragTrap::FragTrap(void)
 {
-    this->_name.assign("Noname");
     this->_hitpoints = 100;
     this->_energypoints = 100;
     this->_attackdamage = 30;
+	this->_newhitpoints = 100;
+	this->_newattackdamage = 30;
 	std::cout << "FragTrap's default constructor has been called" << std::endl;
 }
 
@@ -27,6 +28,8 @@ FragTrap::FragTrap(std::string &name)
     this->_hitpoints = 100;
     this->_energypoints = 100;
     this->_attackdamage = 30;
+	this->_newhitpoints = 100;
+	this->_newattackdamage = 30;
 	std::cout << "FragTrap's assignation constructor has been called" << std::endl;
 }
 

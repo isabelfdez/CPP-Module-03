@@ -6,7 +6,7 @@
 /*   By: isfernan <isfernan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/29 18:25:06 by user42            #+#    #+#             */
-/*   Updated: 2021/09/01 13:48:16 by isfernan         ###   ########.fr       */
+/*   Updated: 2021/09/02 19:02:12 by isfernan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,9 @@ class ScravTrap : public virtual ClapTrap
 		void			beRepaired(unsigned int amount);
 
 		void			guardGate(void);
+
+	protected:
+		int				_newenergypoints;
 };
 
 

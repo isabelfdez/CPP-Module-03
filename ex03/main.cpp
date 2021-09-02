@@ -6,7 +6,7 @@
 /*   By: isfernan <isfernan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/17 14:10:13 by user42            #+#    #+#             */
-/*   Updated: 2021/09/01 16:45:17 by isfernan         ###   ########.fr       */
+/*   Updated: 2021/09/02 19:21:43 by isfernan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ int     main(void)
     std::string target;
 
     name.assign("My Diamond");
-    target.assign("Other kind of trap");
+    target.assign("Trap");
 
     DiamondTrap dt(name);
 
@@ -26,5 +26,5 @@ int     main(void)
     dt.beRepaired(10);
     dt.takeDamage(30);
     dt.highFivesGuys();
-    dt.guardGate();    
+    dt.guardGate();  
 }

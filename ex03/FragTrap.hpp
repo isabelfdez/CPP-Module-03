@@ -6,7 +6,7 @@
 /*   By: isfernan <isfernan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/29 21:04:29 by user42            #+#    #+#             */
-/*   Updated: 2021/09/01 13:48:06 by isfernan         ###   ########.fr       */
+/*   Updated: 2021/09/02 19:02:46 by isfernan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,10 @@ class FragTrap : public virtual ClapTrap
 		void			beRepaired(unsigned int amount);
 
 		void			highFivesGuys(void);
+
+	protected:
+		int				_newhitpoints;
+		int				_newattackdamage;
 };
 
 #endif

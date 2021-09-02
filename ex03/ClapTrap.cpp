@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ClapTrap.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: user42 <user42@student.42.fr>              +#+  +:+       +#+        */
+/*   By: isfernan <isfernan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/17 13:34:43 by user42            #+#    #+#             */
-/*   Updated: 2021/08/29 19:14:27 by user42           ###   ########.fr       */
+/*   Updated: 2021/09/02 19:37:36 by isfernan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,9 @@ ClapTrap::ClapTrap(void) : _name("Noname"), _hitpoints(10), _energypoints(10), _
 	std::cout << "ClapTrap's default constructor has been called" << std::endl;
 }
 
-ClapTrap::ClapTrap(std::string &name) : _name(name), _hitpoints(10), _energypoints(10), _attackdamage(0)
+ClapTrap::ClapTrap(std::string &name) : _hitpoints(10), _energypoints(10), _attackdamage(0)
 {
+	this->_name.assign(name + "_clap_name");
 	std::cout << "ClapTrap's assignation constructor has been called" << std::endl;
 }
 
